@@ -19,6 +19,7 @@ import {
 } from "./components/Icons";
 import SplashScreen from "./components/SplashScreen";
 import VisitorCounter from "./components/VisitorCounter";
+import { Analytics } from "@vercel/analytics/react";
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -463,6 +464,7 @@ const App: React.FC = () => {
         </main>
         <VisitorCounter />
       </div>
+      <Analytics />
     </div>
   );
 };
