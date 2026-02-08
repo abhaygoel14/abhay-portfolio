@@ -18,6 +18,7 @@ import {
   ExternalLinkIcon,
 } from "./components/Icons";
 import SplashScreen from "./components/SplashScreen";
+import VisitorCounter from "./components/VisitorCounter";
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -460,6 +461,7 @@ const App: React.FC = () => {
             </div>
           </section>
         </main>
+        <VisitorCounter />
       </div>
     </div>
   );
